@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Descripcion de creación -->
+    <meta name="description" content="Curso JavaScript - Clase de Bootstrap">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="author" content="Darío Valenzuela">
+    
+    <!-- Descripción de visualización -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Declaración de archivo para Favicon  -->
+    <link rel="shortcut icon" type="image/png" href="">
+
+    <!-- Conexión con Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- A continuación se conecta la fuente deseada (cambiar xxxxxxxxx)-->
+    <link href="https://fonts.googleapis.com/css2?family=xxxxxxxx&display=swap" rel="stylesheet">
+
+    <!-- Conexión a repositorio FONTAWESOME para inclusión de iconos -->
+    <script src="https://kit.fontawesome.com/5591d98e04.js" crossorigin="anonymous"></script>
+
+    <!-- Declaración de hojas de estilo -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Tíyulo de la página -->
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <nav>
+
+    </nav>
+
+    <header>
+        <!-- Image and text -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+            <img src="assets/img/sh2.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+            SuperHero
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Imagen de portada -->
+        <section class="container text-center pt-3">
+            <img src="assets/img/sh1.jpg" alt="" width="30%" height="30%">
+        </section>
+
+        <!-- Sección de presentación y búsqueda de superheroes -->
+        <section class="container" id="busqueda">
+            <h1>Encuentra tu Superhero</h1>
+            <p>Ingresa el número del SuperHero a buscar:</p>
+            <div class="pb-2"><input type="num" id="numeroIngresado" placeholder="número entre 1 y 732"></div>
+            <button type="button" class="btn btn-primary" id="btnBuscarHeroe">Buscar</button>
+        </section>
+
+        <!-- Sección de tarjetas con identificación del SuperHeroe -->
+        <section class="container pt-5" id="inforSuperheroe">
+            <!-- pondremos tres zonas: foto, biografía y gráfico -->
+            <div class="row text-center justify-content-around">
+
+                <!-- Lugar para la foto -->
+                <div class="col-12 col-sm-2" id="sitioFoto"> 
+                    <img src="" alt="" id="imagenHeroe" width="150px" height="auto" style="margin-top: 20%;">
+                </div>
+
+                <!-- Biografía del Superheroe, los datos se ordenaron de una manera mas lógica y congruente -->
+                <div class="col-12 col-sm-4" id="sitioBio" style="width: 50%;" >
+                    <h4 id="heroeEncontrado"></h4>
+                    <p class = "bio" id="nombreHeroe"></p>
+                    <p class = "bio" id="ocupacionHeroe"></p>
+                    <p class = "bio" id="aliasHeroe"></p>
+                    <p class = "bio" id="conexionesHeroe"></p>
+                    <p class = "bio" id="alturaHeroe"></p>
+                    <p class = "bio" id="pesoHeroe"></p>
+                    <p class = "bio" id="publicadoPor"></p>
+                    <p class = "bio" id="primeraAparicion"></p>
+                </div>
+
+                <!-- Área del gráfico, generado con CanvasJS -->
+                <div class="col-12 col-sm-6 text-center" id="areaGrafico" style="width: auto; height: 300px;">
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- infromación de creación de la hoja -->
+    <footer>
+        <p>Creado para SuperHero Chile por Darío Valenzuela - 2021</p>
+    </footer>
+
+
+<!-- SCRIPTS de jquery y bootstraps para manejo correcto de framework Bootstrap -->
+
+    <!--jQuery 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+    <!--Bootstrap JS 4.2.1-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Canvas JS  -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    <!-- Scripts personales -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>

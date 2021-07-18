@@ -1,0 +1,30 @@
+
+#busqueda{
+    width: 60%;
+}
+
+#busqueda p{
+    font-size: 20px;
+}
+
+#busqueda input{
+    width: 100%;
+}
+
+#busqueda button{
+    width: 10%;
+}
+
+.bio {
+    text-align: start;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer p{
+    font-size: 12px;
+    text-align: center;
+    color: dimgray;
+    padding-top: 5rem;
+}
